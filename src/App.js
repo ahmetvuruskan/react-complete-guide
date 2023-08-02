@@ -10,13 +10,12 @@ function App() {
         {id: 'e4', title: 'New Desk (Wooden)', amount: 450, date: new Date(2021, 5, 12)}
     ];
 
-    // return React.createElement("div",{},
-    //     React.createElement("h1",{},"Let's get started!"),
-    //     React.createElement(Expenses,{expenses:expenses})
-    //     );
+    const addExpenseHandler = expense => {
+        console.log(expenses);
+    }
 
     return (<div>
-        <NewExpense/>
+        <NewExpense onAddExpense={addExpenseHandler}/>
         <div className="expenses">
             <Expenses expenses={expenses}></Expenses>
         </div>
