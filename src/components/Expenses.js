@@ -18,7 +18,7 @@ function Expenses(props) {
         <div className="expenses">
             <ExpensesFilter selected={filteredYear} onChangeFilteredyear={changeFilteredYear}/>
             <div className="expenses-list">
-               <ExpensesList items={filteredExpenses}/>
+                <ExpensesList items={filteredExpenses}/>
             </div>
         </div>
     );
